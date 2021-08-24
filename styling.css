@@ -1,0 +1,153 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle ,#fff, #ccc);
+}
+.container{
+    height: 600px;
+    width: 750px;
+    background-color: lightblue;
+    margin: 10px auto;
+    /* top and bottom and right and left respectively; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+}
+.score{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: 700px;
+    box-shadow: 0px 4px 0px 0px goldenrod;
+    -moz-box-shadow: 0px 4px 0px 0px goldenrod;
+    -webkit-box-shadow: 0px 4px 0px 0px goldenrod;
+}
+#correct{
+    position: absolute;
+    left: 250px;
+    background-color: green;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+#try_again{
+    position: absolute;
+    left: 250px;
+    background-color: red;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+#fruitcontainer{
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px 0px 0px darkblue;
+    font-size: 100px;
+    font-family: cursive , sans-serif;
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: cadetblue;
+    margin: 10px auto;
+    line-height: 45px;
+    text-align: center;
+}
+#choices{
+    width:450px ;
+    height:100px;
+    margin: 5px auto;
+}
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(0, 0,0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s ;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition:all 0.2s;
+}
+.box:hover, #startreset:hover{
+    background-color: lightsalmon;
+    color: white;
+    box-shadow: 0px 4px lightseagreen;
+    -moz-box-shadow: 0px 4px lightseagreen;
+    -webkit-box-shadow: 0px 4px lightseagreen;
+}
+.box:active, #startreset:active{
+    box-shadow: 0px 0px 0px 0px blueviolet;
+    top: 4px;
+}
+#box4{
+    margin-right: 0;
+}
+#startreset{
+    width: 78px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+   margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(0, 0,0, 0.2);
+    text-align: center;
+   
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s ;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition:all 0.2s;
+}
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+#trialsleft{
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    
+    background-color: greenyellow;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0,0, 0.2);
+    /* visibility: hidden; */
+    /* display: none; */
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#d4660b , darkorange);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 2;
+    display: none;
+    /* display: none; */
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
